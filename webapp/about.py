@@ -22,9 +22,3 @@ class About:
         If you have any questions or feedback, please let us know.""",
                classes='text-lg')
         return wp
-
-
-jp.Route(About.path, About.serve)
-jp.justpy(port=8001)
-        
-
