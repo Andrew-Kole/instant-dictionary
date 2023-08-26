@@ -3,7 +3,7 @@ import justpy as jp
 class Home:
     """represents home page"""
 
-    path='/home'
+    path='/'
 
     def serve(self):
         wp = jp.QuasarPage(tailwind=True)
