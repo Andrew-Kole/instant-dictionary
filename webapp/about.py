@@ -5,7 +5,8 @@ class About:
 
     path = '/about'
 
-    def serve(self):
+    @classmethod
+    def serve(cls, req):
         wp = jp.QuasarPage(tailwind=True)
         div = jp.Div(a=wp, classes='bg-gray-200 h-screen')
         jp.Div(a=div, text='About page', classes='text-4xl m-2')
