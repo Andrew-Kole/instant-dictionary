@@ -1,6 +1,9 @@
 import pandas
+import os
 
+import os
 
+os.chdir(os.path.dirname(__file__))
 class Definition:
     """
     This class represents definitions of the words.
