@@ -1,7 +1,9 @@
 import justpy as jp
 import layout
+import page
 
-class Home:
+
+class Home(page.Page):
     """represents home page"""
 
     path = '/'

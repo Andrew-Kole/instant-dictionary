@@ -1,9 +1,10 @@
 import justpy as jp
 import definition
 import layout
+import page
 
 
-class Dictionary:
+class Dictionary(page.Page):
     path = '/dictionary'
 
     @classmethod

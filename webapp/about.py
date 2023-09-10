@@ -1,8 +1,9 @@
 import justpy as jp
 import layout
+import page
 
 
-class About:
+class About(page.Page):
 
     path = '/about'
 
