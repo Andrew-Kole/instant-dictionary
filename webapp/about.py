@@ -1,4 +1,5 @@
 import justpy as jp
+import layout
 
 
 class About:
@@ -8,7 +9,11 @@ class About:
     @classmethod
     def serve(cls, req):
         wp = jp.QuasarPage(tailwind=True)
-        div = jp.Div(a=wp, classes='bg-gray-200 h-screen')
+
+        lay = layout.DefaultLayout(a=wp)
+        container = jp.QPageContainer(a=lay)
+
+        div = jp.Div(a=container, classes='bg-gray-200 h-screen p-2')
         jp.Div(a=div, text='About page', classes='text-4xl m-2')
         jp.Div(a=div,
                text="""Welcome to the Instant Dictionary App! 
